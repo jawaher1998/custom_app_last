@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:fontFamily="cursive"
         android:layout_marginEnd="30dp"
         android:text="Recipe details"
         android:textColor="#4CAF50"
@@ -64,19 +65,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recipeFav">
-        <androidx.core.widget.NestedScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView13"
-            app:layout_constraintBottom_toTopOf="parent"
-            android:id="@+id/sc"
-            >
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                app:layout_constraintTop_toBottomOf="@+id/textView13"
-                >
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -88,8 +77,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:text="Recipe name: " />
 
                     <TextView
@@ -113,8 +103,9 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:text="Recipe diet: "
+                        android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textSize="18sp"/>
+                        android:textColor="@color/black"/>
 
                     <TextView
                         android:id="@+id/RecipeDiet"
@@ -136,38 +127,39 @@
                     android:id="@+id/listing"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
                     android:layout_alignParentStart="true"
                     android:text="ingredients:" />
 
-                    <TextView
 
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="16sp"
-                        android:layout_alignParentStart="true"
-                        android:text="click long on the ingredient to see all related \nproducts and add it directly to cart." />
-                    <ListView
-                        android:layout_alignParentStart="true"
-                        android:id="@+id/listView"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_above="@+id/id_bottom"
-                        android:layout_below="@+id/textin"
-                        android:layout_marginBottom="0dp"
-                        android:scrollbars="vertical" />
-                    <Button
-                        android:id="@+id/select"
-                        android:layout_width="0dp"
-                        android:layout_height="0dp"
-                        android:layout_gravity="right"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/button_custom"
-                        android:text="Select" />
+\
 
                 </LinearLayout>
 
+                <TextView
+
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#D51E1E"
+                    android:layout_alignParentStart="true"
+                    android:text="click long on the ingredient to see all related products \n and add it directly to cart." />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+                <ListView
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_above="@+id/id_bottom"
+                    android:layout_below="@+id/textin"
+                    android:layout_marginBottom="0dp"
+                    android:scrollbars="vertical" />
+</LinearLayout>
                 <LinearLayout
                     android:id="@+id/howtomake"
                     android:layout_width="match_parent"
@@ -180,28 +172,39 @@
                         android:layout_width="wrap_content"
                         android:layout_height="32dp"
                         android:layout_alignParentStart="true"
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:text="How to make it: " />
 
-                    <ScrollView
-                        android:layout_width="310dp"
-                        android:layout_height="50dp"
-                        android:layout_marginTop="10dp"
-                        >
-
-                        <TextView
-                            android:id="@+id/RecipeProcedure"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="TextView" />
-                    </ScrollView>
-
-
                 </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="120dp">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp">
+
+                <TextView
+                    android:id="@+id/RecipeProcedure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:text="TextView" />
+            </androidx.core.widget.NestedScrollView>
+        </RelativeLayout>
+
             </LinearLayout>
-        </androidx.core.widget.NestedScrollView>
-    </LinearLayout>
+
+
+
+
 
 
 

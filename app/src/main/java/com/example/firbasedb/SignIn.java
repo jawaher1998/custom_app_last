@@ -69,27 +69,29 @@ public class SignIn extends AppCompatActivity {
 
             }
 
+
         });
     }
 
+
     private void loginuser() {
-        email = Email.getText().toString().toUpperCase().trim();
+        email = Email.getText().toString();
         password = pass.getText().toString();
-        if (TextUtils.isEmpty(email) && TextUtils.isEmpty(password)) {
+        if (TextUtils.isEmpty(email) &&TextUtils.isEmpty(password)) {
             Email.setError("Please enter your email");
             pass.setError("Please enter your password");
             return;
         }
-        if (TextUtils.isEmpty(email)) {
+        if (TextUtils.isEmpty(email) ) {
             Email.setError("Please enter your email");
             return;
         }
-        if (TextUtils.isEmpty(password)) {
+        if(TextUtils.isEmpty(password)){
             pass.setError("Please enter your password");
             return;
 
         }
-        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+        if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
 
             Toast.makeText(SignIn.this, "Fields email pattern..", Toast.LENGTH_LONG).show();
             return;

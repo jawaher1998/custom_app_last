@@ -2,6 +2,7 @@ package com.example.firbasedb;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -221,12 +222,13 @@ public class ImageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
                 final DialogPlus dialogPlus =
                         DialogPlus.newDialog(view.getContext())
                                 .setContentHolder(new com.orhanobut.dialogplus.ViewHolder(R.layout.recipe_details_dialog))
-                                .setExpanded(true, 1750).create();
+                                .setExpanded(true, 1850).create();
                 View myView = dialogPlus.getHolderView();
                 TextView recName = myView.findViewById(R.id.RecipeName);
                 ImageView purl = myView.findViewById(R.id.recImage);
                 TextView recDiet = myView.findViewById(R.id.RecipeDiet);
                 TextView recProcedure = myView.findViewById(R.id.RecipeProcedure);
+                recProcedure.setMovementMethod(new ScrollingMovementMethod());
                 ImageButton previousButton = myView.findViewById(R.id.previousButton2);
                 ImageButton recipeFav = myView.findViewById(R.id.recipeFav);
                 isLike(model.getRecipeID(),recipeFav);

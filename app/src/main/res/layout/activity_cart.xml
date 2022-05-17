@@ -6,38 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".CartPage"
     android:layoutDirection="ltr">
+
+    <ImageButton
+        android:id="@+id/previousButtonCart"
+        android:layout_width="43dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:background="#00FFFFFF"
+        android:onClick="previouscart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
     <TextView
         android:id="@+id/cartPage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:paddingStart="10dp"
-        android:background="#fff"
+        android:fontFamily="cursive"
+        android:gravity="end"
+        android:paddingEnd="15dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:layout_marginBottom="10dp"
         android:text="My Cart"
         android:textColor="#4CAF50"
         android:textSize="30sp"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_view_cart"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginEnd="0dp"
-        android:background="#47B64B"
-        app:itemIconTint="@drawable/selector"
-        app:itemTextColor="@drawable/selector"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:menu="@menu/bottom_nav_menu" />
-
-
-
-
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/cartRecycler"
             android:layout_width="0dp"
@@ -47,7 +42,6 @@
             app:layout_constraintBottom_toTopOf="@+id/linp"
             app:layout_constraintTop_toBottomOf="@+id/cartPage"
             app:layout_constraintStart_toStartOf="parent"
-
             android:orientation="vertical" />
 
 
@@ -61,6 +55,7 @@
             android:layout_marginBottom="10dp"
             android:background="#C6C5C5"
             android:orientation="horizontal"
+        android:gravity="center|start"
             app:layout_constraintBottom_toTopOf="@+id/completeOrder"
             app:layout_constraintStart_toStartOf="@+id/cartPage">
 
@@ -69,40 +64,30 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-
+                android:textColor="@color/black"
                 android:text="Total Price:"
                 android:textSize="16sp"
-                android:textStyle="bold"
-
-                />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/totalPriceCart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="70dp"
-                android:layout_marginTop="10dp"
-                android:text="0"
+                android:text="0.0"
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <Button
-            android:id="@+id/completeOrder"
-            android:layout_width="300dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/manager_button"
-            android:drawablePadding="10dp"
-            android:text="Complete the order"
-            app:layout_constraintBottom_toTopOf="@+id/nav_view_cart"
-            app:layout_constraintStart_toStartOf="parent"
-            />
-
-
-
-
-
+    <Button
+        android:id="@+id/completeOrder"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/gradiatbtn"
+        android:drawablePadding="10dp"
+        android:text="Complete the order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

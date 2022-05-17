@@ -26,6 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="30dp"
+        android:fontFamily="cursive"
         android:text="Products"
         android:textColor="#4CAF50"
         android:textSize="30sp"

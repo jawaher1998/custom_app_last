@@ -26,9 +26,10 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="0dp"
             android:gravity="center"
-            android:text="Add Ingredients"
+            android:text="Add Recipe"
             android:textSize="18sp"
             android:textStyle="bold"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
@@ -122,7 +123,7 @@
             android:ems="10"
             android:focusableInTouchMode="true"
             android:gravity="start|bottom"
-            android:hint="How to make it"
+            android:hint="Procedure"
             android:inputType="textMultiLine"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -185,13 +186,13 @@
             android:layout_marginEnd="0dp"
             android:layout_marginRight="10dp"
             android:layout_weight="10"
-            android:hint="Enter one Ingredient and click Add "
+            android:hint="Write Ingredient"
             android:inputType="text"
             android:textSize="14sp" />
 
         <Button
             android:id="@+id/add"
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_below="@+id/et"
             android:layout_marginTop="10dp"
@@ -213,8 +214,7 @@
         <ListView
             android:id="@+id/_dynamic"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/id_bottom"
+            android:layout_height="200dp"
             android:layout_below="@+id/textin"
             android:layout_alignParentStart="true"
             android:layout_marginStart="0dp"
@@ -224,6 +224,7 @@
             android:id="@+id/id_bottom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/_dynamic"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="3dp"
             android:gravity="center"
@@ -232,23 +233,20 @@
             <Button
                 android:id="@+id/addp"
                 android:name=".SplashActivity"
-                android:layout_width="341dp"
-                android:layout_height="36dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
                 android:layout_marginStart="0dp"
                 android:layout_marginEnd="0dp"
-                android:background="@drawable/manager_button"
+                android:background="@drawable/gradiatbtn"
                 android:noHistory="true"
                 android:onClick="add_post"
                 android:saveEnabled="false"
-                android:text="Add"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="Don"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.528"
+                app:layout_constraintHorizontal_bias="0.428"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintVertical_bias="0.89" />
-        </LinearLayout>
+                app:layout_constraintVertical_bias="0.90" />
 
+        </LinearLayout>
     </RelativeLayout>
 </ScrollView>

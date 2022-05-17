@@ -37,6 +37,7 @@
             android:layout_gravity="left"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="2dp"
+            android:padding="20dp"
             android:background="@drawable/delete" />
 
         <!--        <ImageButton-->
@@ -69,7 +70,7 @@
             android:layout_toStartOf="@+id/delete"
             android:text="Chocolate Milk"
             android:textColor="#000000"
-            android:textSize="10dp" />
+            android:textSize="15dp" />
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

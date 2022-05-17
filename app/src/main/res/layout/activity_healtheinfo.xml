@@ -224,7 +224,8 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="5dp"
         android:text="milk"
-        android:textSize="20dp"
+        android:textSize="15dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@+id/textView12"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -264,7 +265,8 @@
         android:layout_marginStart="30dp"
 
         android:text="egg"
-        android:textSize="20dp"
+        android:textSize="15dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/checkMilk"
         app:layout_constraintTop_toTopOf="@+id/checkMilk" />
 
@@ -272,11 +274,10 @@
         android:id="@+id/checkPeanut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_marginStart="30dp"
-
         android:text="peanut"
-        android:textSize="20dp"
+        android:textSize="15dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/checkEgg"
         app:layout_constraintTop_toTopOf="@+id/checkEgg" />
 
@@ -287,7 +288,8 @@
 
 
         android:text="soy"
-        android:textSize="20dp"
+        android:textSize="15dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@+id/checkMilk"
         app:layout_constraintTop_toBottomOf="@+id/checkMilk" />
 
@@ -298,37 +300,37 @@
 
         android:layout_marginStart="0dp"
         android:text="wheat"
-        android:textSize="20dp"
+        android:textSize="15dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@+id/checkEgg"
         app:layout_constraintTop_toTopOf="@+id/checkSoy" />
-
     <CheckBox
         android:id="@+id/checkNut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_marginStart="0dp"
         android:text="nut"
-        android:textSize="20dp"
+        android:textSize="15dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@+id/checkPeanut"
         app:layout_constraintTop_toTopOf="@+id/checkWheat" />
 
     <Button
         android:id="@+id/confirm"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button_custom"
+        android:layout_height="35dp"
+        android:background="@drawable/gradiatbtn"
         android:imeOptions="actionDone"
         android:onClick="Calculate"
         android:text="confirm"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.405"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.814" />
+        app:layout_constraintTop_toBottomOf="@+id/checkWheat"
+        app:layout_constraintVertical_bias="0.228" />
 
     <TextView
         android:id="@+id/textView12"

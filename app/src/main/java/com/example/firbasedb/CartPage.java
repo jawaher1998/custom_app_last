@@ -69,34 +69,34 @@ public class CartPage extends AppCompatActivity {
         FirebaseApp.initializeApp(this);
 
 
-        bottomNavigationView=findViewById(R.id.nav_view_cart);
-        bottomNavigationView.setSelectedItemId(R.id.nav_basket);
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
-                    case R.id.nav_home:
-                        startActivity(new Intent(CartPage.this,HomePage.class));
-                        break;
-                    case R.id.nav_fav:
-                        startActivity(new Intent(CartPage.this,Favorite.class));
-                        break;
-                    case R.id.nav_basket:
-                        startActivity(new Intent(CartPage.this,CartPage.class));
-                        break;
-                    case R.id.nav_add_recipe:
-                        startActivity(new Intent(CartPage.this,AddRecipePage.class));
-                        break;
-                    case R.id.nav_profile:
-                        startActivity(new Intent(CartPage.this,Account.class));
-                        break;
-
-
-                }
-                return true;
-            }
-        });
+//        bottomNavigationView=findViewById(R.id.nav_view_cart);
+//        bottomNavigationView.setSelectedItemId(R.id.nav_basket);
+//
+//        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+//            @Override
+//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+//                switch (item.getItemId()){
+//                    case R.id.nav_home:
+//                        startActivity(new Intent(CartPage.this,HomePage.class));
+//                        break;
+//                    case R.id.nav_fav:
+//                        startActivity(new Intent(CartPage.this,Favorite.class));
+//                        break;
+//                    case R.id.nav_basket:
+//                        startActivity(new Intent(CartPage.this,CartPage.class));
+//                        break;
+//                    case R.id.nav_add_recipe:
+//                        startActivity(new Intent(CartPage.this,AddRecipePage.class));
+//                        break;
+//                    case R.id.nav_profile:
+//                        startActivity(new Intent(CartPage.this,Account.class));
+//                        break;
+//
+//
+//                }
+//                return true;
+//            }
+//        });
 //        searchView=findViewById(R.id.searchBar);
 //        searchView.clearFocus();
 //        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -400,6 +400,9 @@ public class CartPage extends AppCompatActivity {
 
     }
 
+    public void previouscart(View view) {
+        finish();
+    }
 
 
 //    private void filterList(String newText) {

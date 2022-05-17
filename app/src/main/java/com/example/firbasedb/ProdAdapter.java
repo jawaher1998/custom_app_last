@@ -4,11 +4,13 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -221,6 +223,7 @@ ProdAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
                 ImageView purl = myView.findViewById(R.id.ProductImage);
                 TextView productIngredients = myView.findViewById(R.id.ProductIngredients);
                 TextView productDiet = myView.findViewById(R.id.ProductDiet);
+                productIngredients.setMovementMethod(new ScrollingMovementMethod());
                 ImageButton previousButton = myView.findViewById(R.id.ProductPreviousButton);
                 ImageButton favoriteButton = myView.findViewById(R.id.productFavD);
                 ImageButton addToCartDetail=myView.findViewById(R.id.addToCartDetail);

@@ -13,6 +13,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginStart="15dp"
         android:text="Favorites"
+        android:fontFamily="cursive"
         android:textColor="#4CAF50"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"

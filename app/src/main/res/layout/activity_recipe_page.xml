@@ -27,6 +27,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="30dp"
         android:text="Recipes"
+        android:fontFamily="cursive"
         android:textColor="#4CAF50"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,8 +48,6 @@
         app:itemIconTint="@drawable/selector"
         app:itemTextColor="@drawable/selector"
         app:menu="@menu/bottom_nav_menu" />
-
-
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchBar"
         android:layout_width="371dp"
@@ -61,148 +60,15 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <HorizontalScrollView
-        android:id="@+id/hs"
-        android:layout_width="wrap_content"
-        android:layout_height="53dp"
-        android:layout_marginStart="16dp"
-        android:fillViewport="true"
-        android:isScrollContainer="false"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchBar">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:padding="10dp"
-
-            >
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-
-                android:layout_marginRight="10dp"
-
-                android:background="@drawable/button_categ"
-
-                android:text="All"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-
-                tools:ignore="TouchTargetSizeCheck" />
-
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-
-                android:layout_marginRight="10dp"
-
-                android:background="@drawable/button_categ2"
-
-                android:text="Bakery"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-
-
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="TouchTargetSizeCheck" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginRight="10dp"
-
-
-                android:background="@drawable/button_categ2"
-                android:paddingTop="-1dp"
-                android:text="Main Dishes"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="TouchTargetSizeCheck" />
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginRight="10dp"
-
-                android:background="@drawable/button_categ2"
-
-                android:text="Desserts"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginRight="10dp"
-
-                android:background="@drawable/button_categ2"
-
-                android:text="Drinks"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-
-
-                />
-
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-
-                android:layout_marginRight="10dp"
-                android:background="@drawable/button_categ2"
-
-                android:text="Appetizers"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-
-
-                />
-        </LinearLayout>
-    </HorizontalScrollView>
-
-
-
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvRecipe"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:paddingTop="2dp"
+            android:paddingTop="10dp"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/nav_view_r"
-            app:layout_constraintTop_toBottomOf="@+id/hs"
+            app:layout_constraintTop_toBottomOf="@+id/searchBar"
             app:layout_constraintStart_toStartOf="parent"
 
             android:orientation="vertical"></androidx.recyclerview.widget.RecyclerView>

@@ -3,56 +3,44 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/drawable-v24/button_custom.xml" value="0.148" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/drawable-v24/custom_button.xml" value="0.148" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/drawable-v24/custom_button1.xml" value="0.148" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/drawable-v24/ic_keyboard_arrow_left_black_24dp.xml" value="0.148" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/drawable/button_categ.xml" value="0.148" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/drawable/button_categ2.xml" value="0.148" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/drawable/button_categ_onclick.xml" value="0.148" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/drawable/gradiatbtn.xml" value="0.148" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/drawable/graditecircle.xml" value="0.148" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/drawable/selector.xml" value="0.148" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/account_custom_item.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/activity_account.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/activity_add_recipe_page.xml" value="0.11322463768115942" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/activity_add_recpie_ingredients.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/activity_cart.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/activity_delete_product_page.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/activity_favorite.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/activity_forgetpassword.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/activity_health_nutrition.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/activity_healtheinfo.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/activity_home_page.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/activity_khiar_add_page.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/activity_logo.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/activity_main_manager.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/activity_mycart.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/activity_product_page.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/activity_recipe_page.xml" value="0.11322463768115942" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/activity_sign_in.xml" value="0.1" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/activity_sign_up.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/activity_warn.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/complete_order.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/dialog_content.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/editprofile.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/fragment_add_recipe.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/fragment_cart.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/fragment_favorite.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/fragment_home.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/fragment_profile.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/incart_item.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/item_of_ing.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/item_view_account_dilog.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/list_item_dropdown.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/popup.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/product_cardview.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/product_custom_item.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/product_details_dialog.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/recipe_custom_item.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/recipe_details_dialog.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/layout/view_account_dialog.xml" value="0.1796875" />
-        <entry key="..\:/Users/a-m-l/OneDrive/المستندات/GitHub/Project/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1796875" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/drawable-v24/manager_button.xml" value="0.1495" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/account_custom_item.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/activity_account.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/activity_add_recipe_page.xml" value="0.27025641025641023" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/activity_add_recpie_ingredients.xml" value="0.27025641025641023" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/activity_cart.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/activity_delete_product_page.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/activity_favorite.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/activity_forgetpassword.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/activity_health_nutrition.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/activity_healtheinfo.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/activity_home_page.xml" value="0.264" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/activity_khiar_add_page.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/activity_logo.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/activity_main_manager.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/activity_mycart.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/activity_product_page.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/activity_recipe_page.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/activity_sign_in.xml" value="0.264" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/activity_warn.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/complete_order.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/dialog_content.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/editprofile.xml" value="0.264" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/fragment_add_recipe.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/fragment_cart.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/fragment_favorite.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/incart_item.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/item_of_ing.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/item_view_account_dilog.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/list_item_dropdown.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/popup.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/product_cardview.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/product_custom_item.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/product_details_dialog.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/recipe_custom_item.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/recipe_details_dialog.xml" value="0.264" />
+        <entry key="..\:/Users/jawaher/Project/app/src/main/res/layout/view_account_dialog.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/jawaher/firbaseDB/app/src/main/res/drawable-v24/button_circle.xml" value="0.1" />
         <entry key="..\:/Users/jawaher/firbaseDB/app/src/main/res/drawable-v24/button_custom.xml" value="0.1" />
         <entry key="..\:/Users/jawaher/firbaseDB/app/src/main/res/drawable-v24/custom_input.xml" value="0.1" />
@@ -146,8 +134,6 @@
         <entry key="..\:/Users/leele/AndroidStudioProjects/KHIARAPP/app/src/main/res/layout/warn.xml" value="0.1716485507246377" />
         <entry key="..\:/Users/leele/AndroidStudioProjects/KHIARAPP/app/src/main/res/menu/bottom_nav_menu.xml" value="0.335" />
         <entry key="..\:/Users/leele/AndroidStudioProjects/KHIARAPP/app/src/main/res/menu/serch_product.xml" value="0.115625" />
-        <entry key="app/src/main/res/layout/product_details_dialog.xml" value="0.21603260869565216" />
-        <entry key="app/src/main/res/layout/recipe_details_dialog.xml" value="0.2857896887737771" />
       </map>
     </option>
   </component>

@@ -26,13 +26,13 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
 
+
 public class SignUp extends AppCompatActivity {
-    EditText username, pass, email, phoneNo;
+    EditText username,pass,email,phoneNo;
     Button signIn, signUp;
     FirebaseAuth fAuth;
     ProgressDialog progressDialog;
-    String user, password, e_mail, phone;
-
+    String user , password , e_mail,phone;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,14 +50,14 @@ public class SignUp extends AppCompatActivity {
         progressDialog.setTitle("please wait");
         progressDialog.setCanceledOnTouchOutside(false);
 
-        signUp.setOnClickListener(new View.OnClickListener() {
+        signUp.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v) {
-                user = username.getText().toString().trim();
-                password = pass.getText().toString().trim();
-                e_mail = email.getText().toString().trim();
-                phone = phoneNo.getText().toString().trim();
-                if (TextUtils.isEmpty(user) && TextUtils.isEmpty(password) && TextUtils.isEmpty(e_mail) && TextUtils.isEmpty(phone)) {
+            public void onClick(View v){
+               user=username.getText().toString().trim();
+               password=pass.getText().toString().trim();
+                 e_mail=email.getText().toString().trim();
+               phone=phoneNo.getText().toString().trim();
+                if(TextUtils.isEmpty(user)&&TextUtils.isEmpty(password)&&TextUtils.isEmpty(e_mail)&&TextUtils.isEmpty(phone)){
                     username.setError("Name is required");
                     pass.setError("Password is required");
                     email.setError("Email is required");
@@ -66,31 +66,31 @@ public class SignUp extends AppCompatActivity {
 
                 }
 
-                if (TextUtils.isEmpty(user)) {
+                if(TextUtils.isEmpty(user)){
                     username.setError("Name is required");
                     return;
 
                 }
-                if (TextUtils.isEmpty(password)) {
+                if(TextUtils.isEmpty(password)){
                     pass.setError("Password is required");
                     return;
 
                 }
-                if (TextUtils.isEmpty(e_mail)) {
+                if(TextUtils.isEmpty(e_mail)){
                     email.setError("Email is required");
                     return;
 
                 }
-                if (TextUtils.isEmpty(phone)) {
+                if(TextUtils.isEmpty(phone)){
                     phoneNo.setError("Phone number is required");
                     return;
 
                 }
-                if (password.length() < 6) {
+                if(password.length()<6){
                     pass.setError("Password Must be at least 6 Characters");
                     return;
                 }
-                if (!Patterns.EMAIL_ADDRESS.matcher(e_mail).matches()) {
+                if(!Patterns.EMAIL_ADDRESS.matcher(e_mail).matches()){
                     email.setError("Please enter valid email");
                     return;
 
@@ -100,7 +100,6 @@ public class SignUp extends AppCompatActivity {
                     phoneNo.setError("Phone number is less 10 number");
                     return;
                 }
-
                 createaccount();
 
             }
