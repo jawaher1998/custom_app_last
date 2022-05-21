@@ -7,6 +7,7 @@
     tools:context=".CartPage"
     android:layoutDirection="ltr">
 
+
     <ImageButton
         android:id="@+id/previousButtonCart"
         android:layout_width="43dp"

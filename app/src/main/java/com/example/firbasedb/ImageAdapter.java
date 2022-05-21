@@ -65,6 +65,7 @@ public class ImageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
 
     }
 
+
     public ImageAdapter(Context mContext, Activity mActivity, ArrayList<Recipe> mContentList) {
         this.mContext = mContext;
         this.mActivity = mActivity;

@@ -11,6 +11,7 @@
     app:cardBackgroundColor="#fff"
     app:cardCornerRadius="20dp"
 
+
     app:cardUseCompatPadding="true">
 
     <RelativeLayout

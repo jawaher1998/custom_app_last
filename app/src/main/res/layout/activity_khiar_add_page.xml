@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".KhiarAddPage">
-
     <Button
         android:id="@+id/ingredients"
         android:layout_width="336dp"

@@ -12,6 +12,7 @@
     android:clickable="true"
     app:cardUseCompatPadding="true">
 
+
     <RelativeLayout
         android:layout_width="125dp"
         android:layout_height="170dp"

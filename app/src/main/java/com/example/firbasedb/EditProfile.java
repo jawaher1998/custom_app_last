@@ -77,6 +77,7 @@ public class EditProfile extends AppCompatActivity {
     ProgressDialog progressDialog;
     Button healthInfo;
 
+
     ActivityResultLauncher<Intent> someActivityResultLauncher1;
 
     @Override

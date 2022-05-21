@@ -10,6 +10,7 @@ android:layoutDirection="ltr"
     android:id="@+id/homepage"
     tools:context=".HomePage">
 
+
     <TextView
         android:id="@+id/khiarTitle"
         app:layout_constraintStart_toStartOf="parent"

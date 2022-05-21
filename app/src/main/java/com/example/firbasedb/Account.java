@@ -84,6 +84,7 @@ public class Account extends AppCompatActivity  {
             }
         });
 
+
         mActivity = Account.this;
         mContext = getApplicationContext();
         recyclerView = findViewById(R.id.POST);

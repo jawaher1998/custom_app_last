@@ -266,11 +266,12 @@ ProdAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
                                             public void onClick(DialogInterface dialogInterface, int i) {
                                                 dialogInterface.dismiss();
                                             }
-                                            
+
                                         }).setNegativeButton("add to cart", new DialogInterface.OnClickListener() {
                                             @Override
                                             public void onClick(DialogInterface dialogInterface, int i) {
                                                 if(addToCartDetail.getTag(R.id.cart).toString().equals("out_cart")) {
+
 
 
                                                     HashMap<String, Object> hash = new HashMap<>();

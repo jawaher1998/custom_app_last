@@ -206,6 +206,7 @@ public class CartPage extends AppCompatActivity {
 
                                 }
 
+
                             }
                         }
 
