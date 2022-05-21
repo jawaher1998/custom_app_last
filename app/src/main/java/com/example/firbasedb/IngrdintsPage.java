@@ -44,7 +44,6 @@ public class IngrdintsPage extends AppCompatActivity {
         setContentView(R.layout.item_of_ing);
 
         Intent intent = getIntent();
-        String ing = intent.getStringExtra("ingredients");
 
         noProducts = (TextView) findViewById(R.id.noProducts) ;
         mActivity = IngrdintsPage.this;
@@ -52,12 +51,12 @@ public class IngrdintsPage extends AppCompatActivity {
         FirebaseApp.initializeApp(this);
 
         recyclerView = findViewById(R.id.ingView);
-
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new GridLayoutManager(mActivity, 3, GridLayoutManager.VERTICAL, false));
         recyclerView.setNestedScrollingEnabled(false);
-        productsList = new ArrayList<>();
 
+        productsList = new ArrayList<>();
+        String ing = intent.getStringExtra("ingredients");
         databaseReference = FirebaseDatabase.getInstance().getReference().child("Products");
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -75,9 +74,7 @@ public class IngrdintsPage extends AppCompatActivity {
                 prodAdapter = new ProdAdapter(mContext,mActivity, (ArrayList<Product>) productsList);
                 recyclerView.setAdapter(prodAdapter);
                 prodAdapter.notifyDataSetChanged();
-
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 

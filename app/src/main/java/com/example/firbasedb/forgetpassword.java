@@ -83,15 +83,10 @@ public class forgetpassword extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if (task.isSuccessful()) {
                                         FirebaseUser currentUser = auth.getCurrentUser();
-                                        if(currentUser != null) {
                                             Toast.makeText(forgetpassword.this, "We have sent you instructions to reset your password!", Toast.LENGTH_LONG).show();
                                             startActivity(new Intent(forgetpassword.this,SignIn.class));
                                         }
-                                    } else {
-                                        Toast.makeText(forgetpassword.this, "Failed to send reset email!", Toast.LENGTH_SHORT).show();
-                                    }
                                     progressDialog.dismiss();
-
                                 }
                             });
                 }

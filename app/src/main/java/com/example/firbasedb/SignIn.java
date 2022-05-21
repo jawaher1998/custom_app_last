@@ -110,7 +110,7 @@ public class SignIn extends AppCompatActivity {
                         if (currentUser != null) {
                             if (currentUser.isEmailVerified()) {
                                 progressDialog.setMessage("Sing in Account ...");
-                                startActivity(new Intent(SignIn.this, HomePage.class));
+                                startActivity(new Intent(SignIn.this, healthinfo.class));
                                 progressDialog.dismiss();
 
                             }else {

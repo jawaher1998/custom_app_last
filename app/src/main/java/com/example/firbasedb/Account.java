@@ -87,7 +87,6 @@ public class Account extends AppCompatActivity  {
         mActivity = Account.this;
         mContext = getApplicationContext();
         recyclerView = findViewById(R.id.POST);
-//        postno = (TextView)findViewById(R.id.post_no) ;
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new GridLayoutManager(mActivity, 3, GridLayoutManager.VERTICAL, false));
         recyclerView.setNestedScrollingEnabled(false);

@@ -183,20 +183,13 @@ public class EditProfile extends AppCompatActivity {
                         if (request_code == 100) {
                             uri = data.getData();
                             imageView.setImageURI(uri);
-                            Toast.makeText(EditProfile.this, "uri gallery is " + uri.getPath(), Toast.LENGTH_LONG).show();
 
                         } else if (request_code == 200) {
-//                          bitmap= (Bitmap)  data.getExtras().get("data");
-//                          imageView.setImageBitmap(bitmap);
                             try {
                                 ContentResolver cr = getContentResolver();
                                 try {
-                                    // Creating a Bitmap with the image Captured
                                     Bitmap bitmap = MediaStore.Images.Media.getBitmap(cr, uri);
-                                    // Setting the bitmap as the image of the
                                     imageView.setImageBitmap(bitmap);
-                                    Toast.makeText(EditProfile.this, "uri is camera" + uri.getPath(), Toast.LENGTH_LONG).show();
-
                                 } catch (IOException e) {
                                     e.printStackTrace();
                                 }
@@ -231,14 +224,11 @@ public class EditProfile extends AppCompatActivity {
 
                             if (!checkCameraPermission()) {
                                 requestCameraPermission();
-                                Toast.makeText(EditProfile.this, "successful Image", Toast.LENGTH_LONG).show();
                             }
                         } else if (which == 1) {
 
                             if (!checkStoragePermission()) {
                                 requestStoragePermission();
-                                Toast.makeText(EditProfile.this, "successful add Image", Toast.LENGTH_LONG).show();
-
                             }
                         }
                     }
@@ -264,9 +254,7 @@ public class EditProfile extends AppCompatActivity {
                 MediaStore.Images.Media.INTERNAL_CONTENT_URI);
         intent.setType("image/*");
         someActivityResultLauncher1.launch(intent);
-
     }
-
     private void requestCameraPermission() {
         request_code = 200;
         ContentValues values = new ContentValues();
@@ -277,8 +265,6 @@ public class EditProfile extends AppCompatActivity {
         intent.putExtra(MediaStore.EXTRA_OUTPUT, uri);
         someActivityResultLauncher1.launch(intent);
     }
-
-    ////////database firebase////////
     String nameupdate, emailupate, phoneupadte;
 
     public void Save(View view) {
@@ -297,8 +283,6 @@ public class EditProfile extends AppCompatActivity {
     private void updateprofile() {
         progressDialog.setMessage("Updating profile");
         progressDialog.show();
-
-        Toast.makeText(getApplicationContext(), "Updating profile", Toast.LENGTH_SHORT).show();
         if (uri == null) {
             HashMap<String, Object> hashMap = new HashMap<>();
             hashMap.put("name", nameupdate);

@@ -111,9 +111,6 @@ public class CartAd extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder mainHolder, int position) {
         CartAd.ViewHolder holder = (CartAd.ViewHolder) mainHolder;
-
-
-
         final Cart model = mContentList.get(position);
         // setting data over views
         String imgUrl = model.getImg();
@@ -132,12 +129,9 @@ public class CartAd extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             public void onClick(View view) {
                 if(FirebaseDatabase.getInstance().getReference().child("cart").child(firebaseUser.getUid()).getKey().equals(firebaseUser.getUid())) {
                     String y=model.getPrice();
-
                     double nn=Double.parseDouble(model.getProductAmountInCart());
                         model.setProductAmountInCart(0 + "");
                         Cart.totalPrice=Cart.totalPrice-(Double.parseDouble(y)*nn);
-
-
                         FirebaseDatabase.getInstance().getReference().child("cart").child(firebaseUser.getUid()).child(model.getProductId())
                                 .removeValue();
                         holder.cAmount.setText((model.getProductAmountInCart()));
@@ -158,8 +152,6 @@ public class CartAd extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
                         model.setProductAmountInCart((Integer.parseInt(model.getProductAmountInCart()) + 1) + "");
                         Cart.totalPrice = Cart.totalPrice + Double.parseDouble(model.getPrice());
-
-
 
                         FirebaseDatabase.getInstance().getReference().child("cart").child(firebaseUser.getUid()).child(model.getProductId())
                                 .child("productAmountInCart").setValue(model.getProductAmountInCart());

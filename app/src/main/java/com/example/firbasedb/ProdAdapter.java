@@ -252,11 +252,8 @@ ProdAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
                 isInCart(model.getProductId(),addToCartDetail);
 
                 addToCartDetail.setOnClickListener(new View.OnClickListener() {
-
-
                     @Override
                     public void onClick(View view) {
-
                         if(Integer.parseInt(model.getAmount())!=0){
 
                             if(!(addToCartDetail.getTag(R.id.allergy).toString().equals(""))){
@@ -269,6 +266,7 @@ ProdAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
                                             public void onClick(DialogInterface dialogInterface, int i) {
                                                 dialogInterface.dismiss();
                                             }
+                                            
                                         }).setNegativeButton("add to cart", new DialogInterface.OnClickListener() {
                                             @Override
                                             public void onClick(DialogInterface dialogInterface, int i) {
@@ -282,10 +280,7 @@ ProdAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
                                                     hash.put("price", model.getPrice());
                                                     hash.put("productId", model.getProductId());
                                                     hash.put("amount", model.getAmount());
-                                                    //hash.put("totalPrice",model.getPrice());
                                                     hash.put("productAmountInCart", "1");
-
-                                                    //hash.put("productAmountInCart", Integer.toString(Integer.parseInt(aCart)+1));
                                                     FirebaseDatabase.getInstance().getReference().child("cart").child(firebaseUser.getUid()).child(model.getProductId()).setValue(hash)
                                                             .addOnSuccessListener(new OnSuccessListener<Void>() {
                                                                 @Override

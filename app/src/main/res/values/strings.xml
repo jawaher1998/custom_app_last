@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">firbaseDB</string>
+    <string name="app_name">KHIAR</string>
     <string name="cart_page" />
     <string name="what_s_your_weight">what your weight</string>
     <item name="cart" type="id" ></item>

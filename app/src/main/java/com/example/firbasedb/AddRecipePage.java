@@ -193,8 +193,6 @@ public class AddRecipePage extends AppCompatActivity implements AdapterView.OnIt
     }
 
     public ActivityResultLauncher<Intent> getSomeActivityResultLauncher() {
-
-
         someActivityResultLauncher1 = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
                 result -> {
@@ -203,18 +201,13 @@ public class AddRecipePage extends AppCompatActivity implements AdapterView.OnIt
                         if (request_code == 100) {
                             uri = data.getData();
                             recipe_photo.setImageURI(uri);
-                            Toast.makeText(getApplicationContext(), "uri gallery is " + uri.getPath(), Toast.LENGTH_LONG).show();
 
                         } else if (request_code == 200) {
-//
                             try {
                                 ContentResolver cr = getContentResolver();
                                 try {
-                                    // Creating a Bitmap with the image Captured
                                     Bitmap bitmap = MediaStore.Images.Media.getBitmap(cr, uri);
-                                    // Setting the bitmap as the image of the
                                     recipe_photo.setImageBitmap(bitmap);
-                                    Toast.makeText(getApplicationContext(), "uri is camera" + uri.getPath(), Toast.LENGTH_LONG).show();
 
                                 } catch (IOException e) {
                                     e.printStackTrace();
@@ -295,7 +288,6 @@ public class AddRecipePage extends AppCompatActivity implements AdapterView.OnIt
         intent.putExtra(MediaStore.EXTRA_OUTPUT, uri);
         someActivityResultLauncher1.launch(intent);
 
-
     }
 
     private  String inputrecipename, inputhowmaket;
@@ -305,8 +297,8 @@ public class AddRecipePage extends AppCompatActivity implements AdapterView.OnIt
         MimeTypeMap mimeTypeMap = MimeTypeMap.getSingleton();
         return mimeTypeMap.getExtensionFromMimeType(resolver.getType(u));
     }
-    private void addpost() {
 
+    private void addpost() {
         if (uri != null) {
             StorageReference storageReference1 =storageReference.child(System.currentTimeMillis()+"."+getfileextiontio(uri));
             uploadTask=  storageReference1.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
@@ -321,8 +313,6 @@ public class AddRecipePage extends AppCompatActivity implements AdapterView.OnIt
                                 @Override
                                 public void onDataChange(@NonNull DataSnapshot snapshot1) {
                                     String namevalue = snapshot1.getValue(String.class);
-//                                    Query query = reference.child("recipe").orderByChild("recipeMaker").equalTo(namevalue);
-
                                     recipe_set.setRecipeName(inputrecipename);
                                     recipe_set.setHowmake(inputhowmaket);
                                     recipe_set.setRecipeMaker(namevalue);
@@ -340,17 +330,14 @@ public class AddRecipePage extends AppCompatActivity implements AdapterView.OnIt
                                             recapiname.setText("");
                                             Toast.makeText(getApplicationContext(), "Finally is completed", Toast.LENGTH_LONG).show();
                                         }
-                                    });
-
-                                }
+                                    }); }
 
                                 @Override
                                 public void onCancelled(
                                         @NonNull DatabaseError error) {
                                     Toast.makeText(getApplicationContext(),"error"+error.getMessage(),Toast.LENGTH_LONG).show();
 
-                                }
-                            });
+                                }});
 
                             Toast.makeText(getApplicationContext(), "great! your add post", Toast.LENGTH_LONG).show();
                             progressDialog.dismiss();
@@ -360,19 +347,13 @@ public class AddRecipePage extends AppCompatActivity implements AdapterView.OnIt
                         @Override
                         public void onFailure(@NonNull Exception e) {
                             Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
-
-
                         }
-                    });
-                }  }).addOnFailureListener(new OnFailureListener() {
+                    }); }  }).addOnFailureListener(new OnFailureListener() {
                 @Override
                 public void onFailure(@NonNull Exception e) {
                     Toast.makeText(getApplicationContext(), "Error!" + e.getMessage(), Toast.LENGTH_LONG).show();
                     progressDialog.dismiss();
-                }
-            });
-
-
+                } });
         } else {
             Toast.makeText(getApplicationContext(), "Please Chose Image", Toast.LENGTH_SHORT).show();
             progressDialog.dismiss();
@@ -382,7 +363,6 @@ public class AddRecipePage extends AppCompatActivity implements AdapterView.OnIt
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         item = adapterView.getItemAtPosition(i).toString();
-        Toast.makeText(getApplicationContext(),"item selected is:"+item,Toast.LENGTH_LONG).show();
     }
 
     @Override

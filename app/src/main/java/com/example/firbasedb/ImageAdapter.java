@@ -222,7 +222,7 @@ public class ImageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
                 final DialogPlus dialogPlus =
                         DialogPlus.newDialog(view.getContext())
                                 .setContentHolder(new com.orhanobut.dialogplus.ViewHolder(R.layout.recipe_details_dialog))
-                                .setExpanded(true, 1850).create();
+                                .setExpanded(true, 1950).create();
                 View myView = dialogPlus.getHolderView();
                 TextView recName = myView.findViewById(R.id.RecipeName);
                 ImageView purl = myView.findViewById(R.id.recImage);

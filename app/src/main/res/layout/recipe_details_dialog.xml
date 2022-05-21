@@ -29,112 +29,115 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_keyboard_arrow_left_black_24dp" />
 
-    <ImageView
-        android:id="@+id/recImage"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="70dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/recipeFav"
-        app:srcCompat="@drawable/chicken" />
 
-    <ImageButton
-        android:id="@+id/recipeFav"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#00FFFFFF"
-        android:contentDescription="fav"
-        android:minWidth="48dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.118"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recImage"
-        app:srcCompat="@drawable/ic_action_name" />
-    <LinearLayout
-        android:id="@+id/linearLayout6"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="10dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recipeFav">
+
+        <ImageView
+            android:id="@+id/recImage"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="70dp"
+            app:layout_constraintBottom_toTopOf="@+id/recipeFav"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/chicken" />
+
+        <ImageButton
+            android:id="@+id/recipeFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#00FFFFFF"
+            android:contentDescription="fav"
+            android:minWidth="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.118"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recImage"
+            app:srcCompat="@drawable/ic_action_name" />
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="409dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="0dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipeFav">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:layout_marginLeft="50dp"
-                    android:layout_marginTop="15dp">
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
+                        android:text="Recipe name: "
                         android:textColor="@color/black"
-                        android:text="Recipe name: " />
-
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
                     <TextView
                         android:id="@+id/RecipeName"
-                        android:layout_width="130dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="55dp"
-                         />
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"/>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:layout_marginLeft="50dp"
-                    android:layout_marginTop="15dp">
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:text="Recipe diet: "
+                        android:textColor="@color/black"
                         android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/RecipeDiet"
-                        android:layout_width="130dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="70dp"
-                         />
+                        android:layout_marginLeft="15dp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="left"
-                    android:orientation="vertical"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="15dp">
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
                     <TextView
-                    android:id="@+id/listing"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
+                        android:id="@+id/listing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="ingredients:"
                         android:textColor="@color/black"
-                    android:layout_alignParentStart="true"
-                    android:text="ingredients:" />
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
 
 
-\
+
 
                 </LinearLayout>
 
@@ -142,65 +145,72 @@
 
                     android:layout_width="380dp"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="click long on the ingredient to see all related products and add it directly to cart."
                     android:textColor="#D51E1E"
-                    android:layout_alignParentStart="true"
-                    android:text="click long on the ingredient to see all related products \n and add it directly to cart." />
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-                <ListView
-                    android:layout_alignParentStart="true"
-                    android:id="@+id/listView"
+                    android:textSize="13sp" />
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_above="@+id/id_bottom"
-                    android:layout_below="@+id/textin"
-                    android:layout_marginBottom="0dp"
-                    android:scrollbars="vertical" />
-</LinearLayout>
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ListView
+                        android:id="@+id/listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_above="@+id/id_bottom"
+                        android:layout_below="@+id/textin"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="0dp"
+                        android:scrollbars="vertical" />
+                </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/howtomake"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:layout_marginLeft="50dp"
-                    android:layout_marginTop="1dp">
+                    android:layout_marginTop="2dp"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="32dp"
                         android:layout_alignParentStart="true"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
+                        android:text="How to make it: "
                         android:textColor="@color/black"
-                        android:text="How to make it: " />
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
-        <RelativeLayout
-            android:id="@+id/relative"
-            android:layout_width="match_parent"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="30dp"
-            android:layout_height="120dp">
+                <RelativeLayout
+                    android:id="@+id/relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="20dp">
 
-            <androidx.core.widget.NestedScrollView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="30dp">
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="30dp">
 
-                <TextView
-                    android:id="@+id/RecipeProcedure"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="30dp"
-                    android:text="TextView" />
-            </androidx.core.widget.NestedScrollView>
-        </RelativeLayout>
+                        <TextView
+                            android:id="@+id/RecipeProcedure"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="TextView" />
+                    </androidx.core.widget.NestedScrollView>
+                </RelativeLayout>
 
             </LinearLayout>
+
 
 
 
